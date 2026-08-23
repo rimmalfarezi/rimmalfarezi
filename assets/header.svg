@@ -1,0 +1,79 @@
+<svg width="1200" height="420" viewBox="0 0 1200 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#050816"/>
+      <stop offset="0.52" stop-color="#0B1226"/>
+      <stop offset="1" stop-color="#111B3D"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="170" y1="110" x2="1020" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00D9FF"/>
+      <stop offset="1" stop-color="#7C3AED"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(930 105) rotate(137) scale(330 280)">
+      <stop stop-color="#00D9FF" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#00D9FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(260 335) rotate(-45) scale(300 220)">
+      <stop stop-color="#7C3AED" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+    <filter id="textGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" stroke="#6EE7FF" stroke-opacity="0.08" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="420" rx="28" fill="url(#bg)"/>
+  <rect width="1200" height="420" rx="28" fill="url(#grid)"/>
+  <rect width="1200" height="420" rx="28" fill="url(#glow1)"/>
+  <rect width="1200" height="420" rx="28" fill="url(#glow2)"/>
+
+  <g opacity="0.7">
+    <circle cx="98" cy="76" r="2" fill="#00D9FF">
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1080" cy="260" r="2" fill="#A78BFA">
+      <animate attributeName="opacity" values="1;0.2;1" dur="3.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1020" cy="350" r="1.5" fill="#00D9FF">
+      <animate attributeName="cy" values="350;326;350" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="170" cy="330" r="1.5" fill="#A78BFA">
+      <animate attributeName="cy" values="330;352;330" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <g stroke="url(#cyan)" stroke-opacity="0.35" fill="none">
+    <rect x="54" y="54" width="1092" height="312" rx="22" stroke-dasharray="7 10"/>
+    <path d="M54 106H175L230 54"/>
+    <path d="M1146 314H1035L980 366"/>
+  </g>
+
+  <g filter="url(#textGlow)">
+    <text x="600" y="174" text-anchor="middle" fill="white" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="86" font-weight="800" letter-spacing="12">RIMM</text>
+    <text x="600" y="222" text-anchor="middle" fill="#00D9FF" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="20" font-weight="600" letter-spacing="6">WEB DEVELOPER / BUILDER</text>
+  </g>
+
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="15" fill="#A8B3CF">
+    <text x="600" y="274" text-anchor="middle">&gt; building products that feel alive_</text>
+    <text x="600" y="303" text-anchor="middle" fill="#7DD3FC">next.js · react · typescript · supabase</text>
+  </g>
+
+  <g>
+    <rect x="408" y="325" width="384" height="3" rx="1.5" fill="#12213D"/>
+    <rect x="408" y="325" width="120" height="3" rx="1.5" fill="#00D9FF">
+      <animate attributeName="x" values="408;680;408" dur="5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <text x="78" y="391" fill="#5EE7FF" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11">SYSTEM // ONLINE</text>
+  <text x="1122" y="391" text-anchor="end" fill="#8B95A7" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11">RIMM // 2026</text>
+
+  <rect x="1" y="1" width="1198" height="418" rx="27" stroke="#18335B" stroke-width="2"/>
+</svg>
